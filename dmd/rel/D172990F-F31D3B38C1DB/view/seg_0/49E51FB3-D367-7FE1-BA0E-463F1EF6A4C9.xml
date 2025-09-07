@@ -1,0 +1,167 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="49E51FB3-D367-7FE1-BA0E-463F1EF6A4C9" name="VW_READINGS_ENRICHED">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>C0CEF560-4AE6-BCBE-511F-43DC20444B70</importedID>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT
+  r.READING_ID,
+  r.TS_UTC,
+  r.VALUE_NUM,
+  si.INSTALLATION_ID,
+  s.SENSOR_ID,
+  st.SENSOR_TYPE_ID,
+  st.CODE   AS SENSOR_TYPE_CODE,
+  st.UNIT   AS SENSOR_UNIT,
+  f.FIELD_ID,
+  f.NAME    AS FIELD_NAME
+FROM READINGS r
+JOIN SENSOR_INSTALLATIONS si ON si.INSTALLATION_ID = r.INSTALLATION_ID
+JOIN SENSORS s               ON s.SENSOR_ID = si.SENSOR_ID
+JOIN SENSOR_TYPES st         ON st.SENSOR_TYPE_ID = s.SENSOR_TYPE_ID
+JOIN FIELDS f                ON f.FIELD_ID = si.FIELD_ID]]></userDefinedSQL>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="READING_ID" id="D17256DF-4D2E-8AC2-CE27-2E5CE18310CB">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER</dataType>
+<headerAlias>READING_ID</headerAlias>
+<reference>false</reference>
+<referencedColumn>253F173E-A278-11B9-180E-2E1DEF187547</referencedColumn>
+<table>08383C39-03B2-F04B-E861-5E50B42671C5</table>
+<tableAlias>r</tableAlias>
+<viewID>49E51FB3-D367-7FE1-BA0E-463F1EF6A4C9</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="TS_UTC" id="DF41E844-20B1-FDCE-53A9-3FF2CA409505">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>TIMESTAMP</dataType>
+<headerAlias>TS_UTC</headerAlias>
+<reference>false</reference>
+<referencedColumn>EEDDD99D-6CFC-45AE-7AC7-ACA39A6D5FBE</referencedColumn>
+<table>08383C39-03B2-F04B-E861-5E50B42671C5</table>
+<tableAlias>r</tableAlias>
+<viewID>49E51FB3-D367-7FE1-BA0E-463F1EF6A4C9</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="VALUE_NUM" id="CA65AAE7-FB09-AF50-85B5-21E80C59139E">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER</dataType>
+<headerAlias>VALUE_NUM</headerAlias>
+<reference>false</reference>
+<referencedColumn>F9A5B9C7-6E72-7EBA-875A-ADAEA547F991</referencedColumn>
+<table>08383C39-03B2-F04B-E861-5E50B42671C5</table>
+<tableAlias>r</tableAlias>
+<viewID>49E51FB3-D367-7FE1-BA0E-463F1EF6A4C9</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="INSTALLATION_ID" id="3064649C-DE06-80BB-B110-10FCC46E9135">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER</dataType>
+<headerAlias>INSTALLATION_ID</headerAlias>
+<reference>false</reference>
+<referencedColumn>7DFB5ED9-2203-066B-891E-6A8ECE29B0AE</referencedColumn>
+<table>BC208762-D52D-EAF3-9FC6-8A46C12C5141</table>
+<tableAlias>si</tableAlias>
+<viewID>49E51FB3-D367-7FE1-BA0E-463F1EF6A4C9</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="SENSOR_ID" id="4B5360E1-A29B-C936-D529-F4BA91D0D8E7">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER</dataType>
+<headerAlias>SENSOR_ID</headerAlias>
+<reference>false</reference>
+<referencedColumn>AC8E43C3-83CB-7C8F-44F3-AE1A1A5AC086</referencedColumn>
+<table>7F59122E-6D2F-3298-E39F-31185AA2ACA9</table>
+<tableAlias>s</tableAlias>
+<viewID>49E51FB3-D367-7FE1-BA0E-463F1EF6A4C9</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="SENSOR_TYPE_ID" id="BCDDBF67-6BD0-D1AA-0CA7-324BCD097967">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER</dataType>
+<headerAlias>SENSOR_TYPE_ID</headerAlias>
+<reference>false</reference>
+<referencedColumn>0BACFC0E-9F15-705C-CEF4-F485D9C4FB0B</referencedColumn>
+<table>56DF9889-898A-E9D2-B605-FC0CC26BBC86</table>
+<tableAlias>st</tableAlias>
+<viewID>49E51FB3-D367-7FE1-BA0E-463F1EF6A4C9</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="SENSOR_TYPE_CODE" id="A2D63794-816B-DD88-CBA9-43C009ECA822">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>SENSOR_TYPE_CODE</alias>
+<dataType>VARCHAR2 (40)</dataType>
+<headerAlias>SENSOR_TYPE_CODE</headerAlias>
+<reference>false</reference>
+<referencedColumn>E462AFCC-BE7B-A729-9B00-76E70E526090</referencedColumn>
+<table>56DF9889-898A-E9D2-B605-FC0CC26BBC86</table>
+<viewID>49E51FB3-D367-7FE1-BA0E-463F1EF6A4C9</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="SENSOR_UNIT" id="8273623D-DD40-0469-F4D1-DA28FB36316A">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>SENSOR_UNIT</alias>
+<dataType>VARCHAR2 (20)</dataType>
+<headerAlias>SENSOR_UNIT</headerAlias>
+<reference>false</reference>
+<referencedColumn>02CE9896-70EF-676A-E453-1284C712E677</referencedColumn>
+<table>56DF9889-898A-E9D2-B605-FC0CC26BBC86</table>
+<viewID>49E51FB3-D367-7FE1-BA0E-463F1EF6A4C9</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="FIELD_ID" id="253DBA33-EE15-DC80-E8F9-FEDCC0B54E7D">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER</dataType>
+<headerAlias>FIELD_ID</headerAlias>
+<reference>false</reference>
+<referencedColumn>A9DBF709-077D-156D-7829-3A0BC396FF2F</referencedColumn>
+<table>54FBEC98-088C-A665-9397-D3A1ED51B928</table>
+<tableAlias>f</tableAlias>
+<viewID>49E51FB3-D367-7FE1-BA0E-463F1EF6A4C9</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="FIELD_NAME" id="DAE14D78-5DB9-05A5-C746-388BF285EE17">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>FIELD_NAME</alias>
+<dataType>VARCHAR2 (50)</dataType>
+<headerAlias>FIELD_NAME</headerAlias>
+<reference>false</reference>
+<referencedColumn>7C7F638B-778B-C1A9-EC3A-689EA4706774</referencedColumn>
+<table>54FBEC98-088C-A665-9397-D3A1ED51B928</table>
+<viewID>49E51FB3-D367-7FE1-BA0E-463F1EF6A4C9</viewID>
+</viewElement>
+</viewElements>
+</TableView>

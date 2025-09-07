@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="38AAF76B-2C3C-4E16-EC12-D6873EC9096F" name="HARVESTS">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Resultado de colheitas por plantio]]></commentInRDBMS>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>4F7E2095-639A-7369-6C43-EA13007CF64B</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="HARVEST_ID" id="36110941-10DF-463C-F63C-E61A5901787D">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>2540196C-88A0-AC14-7FA5-9B4F9FF67C5D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DCD519CF-24A3-DABE-A4F9-F32B1D990E4E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="PLANTING_ID" id="52B3B604-2D09-AD42-1A3F-11BF62DCF347">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>372FAF36-957D-D583-AE0D-B9BB596B2B96</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DCD519CF-24A3-DABE-A4F9-F32B1D990E4E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A44F0C02-2553-6715-0C2E-3D09437FFEE1" referredColumn="EF6A150A-5571-AE47-AE3E-5AD0B7C5254F"/>
+</associations>
+</Column>
+<Column name="HARVEST_DATE" id="9C7C6E51-83C8-EDE2-48FC-D5AD8624B59E">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>1560647F-18EE-890D-DA9B-A34524680D73</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>7ECCFAB6-FCCC-C279-D644-8F67C2BC2FF9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="YIELD_KG_PER_HA" id="5525CA0C-4E26-9DFF-6706-215C864C5FC2">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Produtividade (kg/ha)]]></commentInRDBMS>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>0C343674-950C-4E59-37F0-79A4EAD0EB9E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D5778F3B-175C-5DF8-5363-61FFCF8BAC38</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1571A299-5A33-891F-98B0-0B8003158DBE" name="PK_HARVESTS">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>87AFDA78-A6CF-65CC-FAB1-CAA86319B4BC</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36110941-10DF-463C-F63C-E61A5901787D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="60402BF6-5108-E064-1E63-A59A1B6AD559" name="UQ_HV_PLANT">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>FD7FBED4-4E62-6C4C-86BA-8C31DBC07D95</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="52B3B604-2D09-AD42-1A3F-11BF62DCF347"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="40665679-8674-0A1C-A536-637E73227344" name="FK_HV_PLANT">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="52B3B604-2D09-AD42-1A3F-11BF62DCF347"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_HV_YIELD_POS" directorySegmentName="seg_0" id="4D9FF4C3-211B-EAEE-04A2-7DF728B44E1F">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>77E3A42D-5417-F0CA-CE8C-6ED559FE279E</importedID>
+<rule><![CDATA[YIELD_KG_PER_HA >= 0]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="PLANTINGS" directorySegmentName="seg_0" id="E33816F5-D002-2678-13B0-93BAB369F5C9">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CROP_ID" id="51544155-C5D7-B2E6-C351-5A4D4BE99904">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AREA_HA" id="6B322B9A-627C-E81F-348E-0C4457C4641E">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEED_DENSITY" id="73FDC5B2-28C1-411F-7E60-393573BD9B8D">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PLANTING_DATE" id="9D92E6B3-5F42-C981-A976-18C646998975">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FIELD_ID" id="D1B76600-5F7D-87BA-2286-211D18F4C8ED">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PLANTING_ID" id="EF6A150A-5571-AE47-AE3E-5AD0B7C5254F">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_PL_CROP" id="DA4E9430-B78B-1BE6-E4F9-89E0FF85EA3E">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_PL_FIELD" id="DBC6CC7B-C3B4-EDAE-F62B-52147DAD5EA2">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_PLANTINGS" id="3D9E1332-3C3C-B75E-BD35-8A58F3487469">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="CK_PL_AREA_POSITIVE" id="93B07C1D-2DA7-6A91-7ECA-6203B64746A0">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+</tableCheckConstraints>
+</TableProxyOraclev12c>

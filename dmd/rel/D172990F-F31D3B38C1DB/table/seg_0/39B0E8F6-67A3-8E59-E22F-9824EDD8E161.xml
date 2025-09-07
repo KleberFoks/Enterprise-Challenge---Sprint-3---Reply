@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="39B0E8F6-67A3-8E59-E22F-9824EDD8E161" name="CROPS">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Culturas agrícolas (ex: Soja, Milho, Trigo)]]></commentInRDBMS>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>ED0EA24E-430B-45BC-639F-DCD335BF7828</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CROP_ID" id="96AA0F91-5BA1-6676-19CE-77ED7AD412E0">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>382F407B-F205-1126-AB32-6DAE5912878E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DCD519CF-24A3-DABE-A4F9-F32B1D990E4E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="NAME" id="AC3F033A-E4BB-34EA-BA3F-AA8FD7BD8485">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>7DD2CAE9-4BFF-B1DF-0826-AE41B3833A85</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>92E801CA-414A-F430-E113-D8B0EB2B7348</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="50D360C8-A940-8FD1-9076-889FF2AD07DB" name="PK_CROPS">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>5CFA4FCA-1FD4-B75E-316A-6D66823F2AB0</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96AA0F91-5BA1-6676-19CE-77ED7AD412E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

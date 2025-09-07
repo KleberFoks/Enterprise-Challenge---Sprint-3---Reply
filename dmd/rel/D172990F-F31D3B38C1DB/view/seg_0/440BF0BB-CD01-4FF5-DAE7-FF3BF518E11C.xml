@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="440BF0BB-CD01-4FF5-DAE7-FF3BF518E11C" name="VW_ACTIVE_INSTALLATIONS">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>6696384E-46EE-AE1F-79F6-83B72FAD9236</importedID>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT *
+FROM SENSOR_INSTALLATIONS
+WHERE ENDED_AT IS NULL OR ENDED_AT > SYSTIMESTAMP]]></userDefinedSQL>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="INSTALLATION_ID" id="E21408E4-86F5-3696-420F-FC306501FE1B">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER</dataType>
+<headerAlias>INSTALLATION_ID</headerAlias>
+<reference>false</reference>
+<referencedColumn>7DFB5ED9-2203-066B-891E-6A8ECE29B0AE</referencedColumn>
+<table>BC208762-D52D-EAF3-9FC6-8A46C12C5141</table>
+<tableAlias>SENSOR_INSTALLATIONS</tableAlias>
+<viewID>440BF0BB-CD01-4FF5-DAE7-FF3BF518E11C</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="SENSOR_ID" id="F45D8342-6240-41A7-A457-69B8CCF06B55">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER</dataType>
+<headerAlias>SENSOR_ID</headerAlias>
+<reference>false</reference>
+<referencedColumn>223CF067-5F00-FC10-0D56-9B073B24B17B</referencedColumn>
+<table>BC208762-D52D-EAF3-9FC6-8A46C12C5141</table>
+<tableAlias>SENSOR_INSTALLATIONS</tableAlias>
+<viewID>440BF0BB-CD01-4FF5-DAE7-FF3BF518E11C</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="FIELD_ID" id="7961606D-DC4F-3E62-5F14-1DE89D327B95">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER</dataType>
+<headerAlias>FIELD_ID</headerAlias>
+<reference>false</reference>
+<referencedColumn>88BD7CC1-6BCF-885D-B197-5B66EFDCBBBF</referencedColumn>
+<table>BC208762-D52D-EAF3-9FC6-8A46C12C5141</table>
+<tableAlias>SENSOR_INSTALLATIONS</tableAlias>
+<viewID>440BF0BB-CD01-4FF5-DAE7-FF3BF518E11C</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="STARTED_AT" id="CC70A1BD-69FF-176B-9B6A-EE184F86CB56">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>TIMESTAMP</dataType>
+<headerAlias>STARTED_AT</headerAlias>
+<reference>false</reference>
+<referencedColumn>FB7248E8-238E-446C-138C-26325ED38CD0</referencedColumn>
+<table>BC208762-D52D-EAF3-9FC6-8A46C12C5141</table>
+<tableAlias>SENSOR_INSTALLATIONS</tableAlias>
+<viewID>440BF0BB-CD01-4FF5-DAE7-FF3BF518E11C</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ENDED_AT" id="71551481-F036-03B6-3ECB-89708D682D22">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>TIMESTAMP</dataType>
+<headerAlias>ENDED_AT</headerAlias>
+<reference>false</reference>
+<referencedColumn>1CF4697E-CF39-0D48-E4CF-E58699B3C038</referencedColumn>
+<table>BC208762-D52D-EAF3-9FC6-8A46C12C5141</table>
+<tableAlias>SENSOR_INSTALLATIONS</tableAlias>
+<viewID>440BF0BB-CD01-4FF5-DAE7-FF3BF518E11C</viewID>
+</viewElement>
+</viewElements>
+</TableView>

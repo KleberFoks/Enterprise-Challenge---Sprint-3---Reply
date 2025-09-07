@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="54FBEC98-088C-A665-9397-D3A1ED51B928" name="FIELDS">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Talhões/Campos agrícolas físicos]]></commentInRDBMS>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>A57D4C1D-ED17-DBC7-D5F7-86D248943C95</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FIELD_ID" id="A9DBF709-077D-156D-7829-3A0BC396FF2F">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>DB2C6A34-D117-1C00-7ACE-80BC2E7FEB77</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DCD519CF-24A3-DABE-A4F9-F32B1D990E4E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="NAME" id="7C7F638B-778B-C1A9-EC3A-689EA4706774">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>1C99E7BE-2936-1021-4275-555DA6DAA131</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>92E801CA-414A-F430-E113-D8B0EB2B7348</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AREA_HA" id="C225A47E-009A-4E0D-40A6-46495B78B9D3">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Área do campo em hectares]]></commentInRDBMS>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>776C928A-970D-8DB7-ECC9-D8B8FBBA2FED</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D5778F3B-175C-5DF8-5363-61FFCF8BAC38</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A2BD33B0-8018-C7DC-981A-579BDFC394F7" name="PK_FIELDS">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>5F4D8196-7A4D-3880-D68E-4D60960CF085</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9DBF709-077D-156D-7829-3A0BC396FF2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_FIELDS_AREA_POSITIVE" directorySegmentName="seg_0" id="35D552CE-5FD3-D5EA-25DB-6F59AD084C1F">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>CA47C4F1-1A64-AD4B-9FFA-DF5606E0AB1A</importedID>
+<rule><![CDATA[AREA_HA > 0]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

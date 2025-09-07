@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="teste" id="ACD287C5-9093-1DDB-923E-9D73EC448906" version="3.5">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:31:57 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>ACD287C5-9093-1DDB-923E-9D73EC448906</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="421ABDF5-ADD4-8051-1386-7EC7A17CC8CC">
+<designStoragePath>C:\create_tables</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="D623C895-46C7-673F-F9AB-78FAE448149A">
+<designStoragePath>C:\a</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

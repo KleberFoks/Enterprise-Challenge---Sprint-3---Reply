@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BC208762-D52D-EAF3-9FC6-8A46C12C5141" name="SENSOR_INSTALLATIONS">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Histórico de instalações (sensor x campo) com período ativo]]></commentInRDBMS>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>760E28FA-E7AE-B471-125F-721FB740A7B8</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="INSTALLATION_ID" id="7DFB5ED9-2203-066B-891E-6A8ECE29B0AE">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>B08D6A70-7E72-FB2C-1D12-AD46CEF3AC9E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DCD519CF-24A3-DABE-A4F9-F32B1D990E4E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="SENSOR_ID" id="223CF067-5F00-FC10-0D56-9B073B24B17B">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>D9DFE4A6-FEDD-AA47-CDC3-18792A5EDF91</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DCD519CF-24A3-DABE-A4F9-F32B1D990E4E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="745426E8-9D9F-4066-99C1-A5903E382269" referredColumn="AC8E43C3-83CB-7C8F-44F3-AE1A1A5AC086"/>
+</associations>
+</Column>
+<Column name="FIELD_ID" id="88BD7CC1-6BCF-885D-B197-5B66EFDCBBBF">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>5E13F8A3-7AA1-3FA6-4AB9-1557BB20A010</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DCD519CF-24A3-DABE-A4F9-F32B1D990E4E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FA1C17BE-F897-7184-9335-0C91EEA9458B" referredColumn="A9DBF709-077D-156D-7829-3A0BC396FF2F"/>
+</associations>
+</Column>
+<Column name="STARTED_AT" id="FB7248E8-238E-446C-138C-26325ED38CD0">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>83B545F0-6C5A-B809-BDB5-9328CD4D7A20</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>8EA9C072-FB52-981F-8883-49DA1F822DC1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENDED_AT" id="1CF4697E-CF39-0D48-E4CF-E58699B3C038">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>4A7A295B-BBDF-8EA2-9A18-F0B316154835</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>8EA9C072-FB52-981F-8883-49DA1F822DC1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FE9EB35A-B5E7-1A0A-2120-5F50F5E885EC" name="PK_SENSOR_INSTALLATIONS">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>DCDB6389-AFB4-9F44-547D-C61FE438A774</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7DFB5ED9-2203-066B-891E-6A8ECE29B0AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2C456A7B-1000-C805-475F-CE6ED882E784" name="IX_INST_SENSORS">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>0686E12B-A07E-9AD5-A434-5FA708DC82E3</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="223CF067-5F00-FC10-0D56-9B073B24B17B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6AD0163A-FB4E-CB12-96D1-A82B2124FE03" name="IX_INST_FIELD">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>72314D57-594A-75CC-EE79-95D1D57C9E51</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88BD7CC1-6BCF-885D-B197-5B66EFDCBBBF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F9F3D839-5E9E-265C-0466-33B6F260E4BA" name="FK_INST_FIELD">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88BD7CC1-6BCF-885D-B197-5B66EFDCBBBF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0F11E0FA-EA5B-A058-B047-B78B342D5F96" name="FK_INST_SENSOR">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="223CF067-5F00-FC10-0D56-9B073B24B17B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_INST_PERIOD" directorySegmentName="seg_0" id="EB88BC2A-967A-91FB-867C-50486360B48E">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>BDA04532-D976-0993-62D6-C3FCC284AB80</importedID>
+<rule><![CDATA[ENDED_AT IS NULL OR ENDED_AT >= STARTED_AT]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7F59122E-6D2F-3298-E39F-31185AA2ACA9" name="SENSORS">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Dispositivos físicos de sensoriamento]]></commentInRDBMS>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>69A877A6-F9F0-9C15-CE78-262910172444</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SENSOR_ID" id="AC8E43C3-83CB-7C8F-44F3-AE1A1A5AC086">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>861CBD3F-91AE-B652-56C2-4CCD70E5238E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DCD519CF-24A3-DABE-A4F9-F32B1D990E4E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="SENSOR_TYPE_ID" id="B6F6B8BD-EB6E-F9B4-BDB2-010A536F2424">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>165FD9EB-7106-4807-D224-38DC9C0C6A66</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DCD519CF-24A3-DABE-A4F9-F32B1D990E4E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8CF3F3D0-3325-ACFB-58E3-00B690E8BF08" referredColumn="0BACFC0E-9F15-705C-CEF4-F485D9C4FB0B"/>
+</associations>
+</Column>
+<Column name="MANUFACTURER" id="656B202A-4B47-FDAF-4556-3874ECCC6C13">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>308A0D04-0B9E-B7CA-950C-0F5AEE69C576</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>4E870829-5D1A-91C7-2834-DE60214A8067</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODEL" id="51A5DB12-1AD8-E831-15FE-D094D9D5FE3A">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>6043854A-963C-9301-313E-700B38922BDF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>4E870829-5D1A-91C7-2834-DE60214A8067</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SERIAL_NUMBER" id="765B8B0B-F315-3ED7-9294-71AE632F4566">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de série do equipamento]]></commentInRDBMS>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>FA82F496-C02E-41DA-DFC5-CADA95CD5DB9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>4E870829-5D1A-91C7-2834-DE60214A8067</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INSTALLED_AT" id="7EED5C05-36E6-5CB8-4A46-03D858611C18">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>59E8FAE1-B4DD-07BA-B547-054F27EA7766</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>8EA9C072-FB52-981F-8883-49DA1F822DC1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D6D30DE0-EAB1-1B84-504A-9DDC88482CD2" name="PK_SENSORS">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>CE705D8F-60C5-7CCD-320D-3C193B6A50BE</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC8E43C3-83CB-7C8F-44F3-AE1A1A5AC086"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0EF7E591-AAE9-8988-6E3F-D9C90287A2D5" name="FK_SENSORS_TYPE">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6F6B8BD-EB6E-F9B4-BDB2-010A536F2424"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

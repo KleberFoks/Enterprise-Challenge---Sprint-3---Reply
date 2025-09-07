@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E33816F5-D002-2678-13B0-93BAB369F5C9" name="PLANTINGS">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Plantios efetuados por campo e cultura]]></commentInRDBMS>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>97F1EA5B-9E09-14BB-737D-E39590C5CABF</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PLANTING_ID" id="EF6A150A-5571-AE47-AE3E-5AD0B7C5254F">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>AC748EFB-CD3A-6762-E937-75A6433F04BF</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DCD519CF-24A3-DABE-A4F9-F32B1D990E4E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="FIELD_ID" id="D1B76600-5F7D-87BA-2286-211D18F4C8ED">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>B0B86834-A336-258E-1671-919190AA7094</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DCD519CF-24A3-DABE-A4F9-F32B1D990E4E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A35AECAD-2E2C-23CF-F657-C4C67F956B86" referredColumn="A9DBF709-077D-156D-7829-3A0BC396FF2F"/>
+</associations>
+</Column>
+<Column name="CROP_ID" id="51544155-C5D7-B2E6-C351-5A4D4BE99904">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>CB32A94C-91BA-126D-1D70-A09CE5312E5D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DCD519CF-24A3-DABE-A4F9-F32B1D990E4E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1C4CC1F-3604-3D22-BF7A-266527DB0EEB" referredColumn="96AA0F91-5BA1-6676-19CE-77ED7AD412E0"/>
+</associations>
+</Column>
+<Column name="PLANTING_DATE" id="9D92E6B3-5F42-C981-A976-18C646998975">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>A035465E-FDD7-61FD-BA1A-04C1888367F8</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>7ECCFAB6-FCCC-C279-D644-8F67C2BC2FF9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AREA_HA" id="6B322B9A-627C-E81F-348E-0C4457C4641E">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>7CE23A21-4E65-8567-F55E-926C690A45EB</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D5778F3B-175C-5DF8-5363-61FFCF8BAC38</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEED_DENSITY" id="73FDC5B2-28C1-411F-7E60-393573BD9B8D">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>D5D577A0-33CA-34F4-4A23-1C001650DC7D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>765C67ED-D957-78EB-AA5A-9D031B08E183</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3D9E1332-3C3C-B75E-BD35-8A58F3487469" name="PK_PLANTINGS">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>5BDB4CE7-1710-60F5-E3F0-0DE38CD2A8E7</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF6A150A-5571-AE47-AE3E-5AD0B7C5254F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA4E9430-B78B-1BE6-E4F9-89E0FF85EA3E" name="FK_PL_CROP">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="51544155-C5D7-B2E6-C351-5A4D4BE99904"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DBC6CC7B-C3B4-EDAE-F62B-52147DAD5EA2" name="FK_PL_FIELD">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1B76600-5F7D-87BA-2286-211D18F4C8ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_PL_AREA_POSITIVE" directorySegmentName="seg_0" id="93B07C1D-2DA7-6A91-7ECA-6203B64746A0">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>398689AE-899C-7CB8-FFE2-BE0FE836A8C7</importedID>
+<rule><![CDATA[AREA_HA > 0]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="D172990F-64D4-5D86-1192-F31D3B38C1DB" mainViewID="4218F19C-ADAF-B038-18AF-C7507225A44F">
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:32:01 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>3FD120B5-9F4E-6278-D5E2-746D192C8319</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>create_tables.ddl</fileName>
+<pathName>C:\Users\prisc\Downloads\Fiap\fase 5\Enterprise Challenge - Sprint 3</pathName>
+<dbType>11</dbType>
+</importDDLFileStamp>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>a.sql</fileName>
+<pathName>C:\Users\prisc\Downloads\Fiap\fase 5\Enterprise Challenge - Sprint 3</pathName>
+<dbType>11</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

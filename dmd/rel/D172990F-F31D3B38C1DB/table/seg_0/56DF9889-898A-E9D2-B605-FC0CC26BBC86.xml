@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="56DF9889-898A-E9D2-B605-FC0CC26BBC86" name="SENSOR_TYPES">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipos de sensores e suas unidades de medida]]></commentInRDBMS>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>31325A8B-449D-ECA7-C53A-FC2BA02F1A69</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SENSOR_TYPE_ID" id="0BACFC0E-9F15-705C-CEF4-F485D9C4FB0B">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>9420F61B-B4F0-55A7-DE43-CE0E2F5FC6C4</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DCD519CF-24A3-DABE-A4F9-F32B1D990E4E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="CODE" id="E462AFCC-BE7B-A729-9B00-76E70E526090">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código curto do tipo (ex: TEMP, HUMID, PH)]]></commentInRDBMS>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>83F3107E-578E-45AE-7D4B-C2FA96BA39D7</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F98CE0C6-7384-9A4F-F6C9-B5697448F08E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNIT" id="02CE9896-70EF-676A-E453-1284C712E677">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unidade da leitura (ex: °C, %, pH)]]></commentInRDBMS>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>89AC25D0-08B2-B9EE-9A32-B208A0890E18</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>4FC05B63-4351-82D9-BBC7-5BB813DAEA60</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="033057F1-B654-B660-0B5B-8287E50E6A09">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>22898271-4ACE-419E-E989-52B3B718AB8F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5744B457-684B-2DD6-9026-4DB3628B9A93</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="38BEF092-76DF-EE62-DF45-FA4C8706D490" name="PK_SENSOR_TYPES">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>D8878678-7C3E-BD0E-30DF-AD2ADFB3FACB</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0BACFC0E-9F15-705C-CEF4-F485D9C4FB0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="23967258-BBB9-719B-A3A8-EDB433E1424D" name="UQ_SENSOR_TYPES_CODE">
+<sourceDDLFile>a.sql</sourceDDLFile>
+<createdBy>prisc</createdBy>
+<createdTime>2025-09-07 10:39:26 UTC</createdTime>
+<ownerDesignName>teste</ownerDesignName>
+<importedID>B40D593B-6950-EC39-6A18-574D9A9F8858</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E462AFCC-BE7B-A729-9B00-76E70E526090"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
