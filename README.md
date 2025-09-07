@@ -97,7 +97,7 @@ No notebook foram testados **4 modelos de regressão**:
 
 ## ▶️ Vídeo
 
-LINK ----------
+LINK [----------](https://youtu.be/MQdEH-NsO7s)
 
 ---
 
