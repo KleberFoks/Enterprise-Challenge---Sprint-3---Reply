@@ -97,7 +97,7 @@ No notebook foram testados **4 modelos de regressão**:
 
 ## ▶️ Vídeo
 
-LINK [----------](https://youtu.be/MQdEH-NsO7s)
+LINK [Enterprise Challenge Sprint 3 Reply](https://youtu.be/MQdEH-NsO7s)
 
 ---
 
